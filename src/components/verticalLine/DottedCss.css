@@ -1,0 +1,6 @@
+/* styles.css */
+.dotted-vertical-line-bootstrap {
+    border-left: 2px dotted #ddd; /* Custom dotted line */
+    height: 1000px;
+    width: 2px;
+}

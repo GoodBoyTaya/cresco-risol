@@ -1,56 +1,50 @@
 // Navbar.js
-import React, { useState } from 'react';
-import './Navbar.css'; // Import your CSS file
+import React from 'react';
+import './Navbar.css';
+import {NavLink} from "react-router-dom"; // Import your CSS file
 
 const Navbar = () => {
-  const [selectedItem, setSelectedItem] = useState('home'); // Default selected item
-
-  const handleClick = (item) => {
-    setSelectedItem(item);
-  };
-
-  return (
-    <nav className="navbar">
-      <ul>
-        <li>
-          <a
-            href="/home"
-            className={selectedItem === 'home' ? 'selected' : ''}
-            onClick={() => handleClick('home')}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="/our-story"
-            className={selectedItem === 'our-story' ? 'selected' : ''}
-            onClick={() => handleClick('our-story')}
-          >
-            Our Story
-          </a>
-        </li>
-        <li>
-          <a
-            href="/products"
-            className={selectedItem === 'products' ? 'selected' : ''}
-            onClick={() => handleClick('products')}
-          >
-            Products
-          </a>
-        </li>
-        <li>
-          <a
-            href="/whats-next"
-            className={selectedItem === 'whats-next' ? 'selected' : ''}
-            onClick={() => handleClick('whats-next')}
-          >
-            What's Next
-          </a>
-        </li>
-      </ul>
-    </nav>
-  );
+    return (
+        <div className="container-fluid">
+            <nav className="navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
+                <ul>
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={({isActive}) => (isActive ? 'selected' : '')}
+                        >
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/our-story"
+                            className={({isActive}) => (isActive ? 'selected' : '')}
+                        >
+                            Our Story
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/products"
+                            className={({isActive}) => (isActive ? 'selected' : '')}
+                        >
+                            Products
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                            to="/whats-next"
+                            className={({isActive}) => (isActive ? 'selected' : '')}
+                        >
+                            What's Next
+                        </NavLink>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    );
 };
+
 
 export default Navbar;

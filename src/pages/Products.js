@@ -5,8 +5,10 @@ function Products() {
   return (
     <div>
         <Navbar/>
-      <h1>Products Page</h1>
-      <p>Check out our amazing products!</p>
+        <div className="container">
+            <h1>Products Page</h1>
+            <small className="text-muted">Check out our amazing products!</small>
+        </div>
     </div>
   );
 }

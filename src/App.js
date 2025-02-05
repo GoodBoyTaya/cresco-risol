@@ -6,7 +6,8 @@ import NotFound from './pages/NotFound';
 import WhatsNext from './pages/WhatsNext';
 import AboutUs from './pages/AboutUs';
 import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
