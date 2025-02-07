@@ -4,8 +4,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
+  background-color: #F5F5F5;
+  opacity: 95%;
   color: #2C2F24;
+  height: 100px;
   /*padding: 10px 20px;*/
   /*z-index: 1000;*/
   /*display: flex;*/

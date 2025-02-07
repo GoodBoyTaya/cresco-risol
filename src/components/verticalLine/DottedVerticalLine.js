@@ -4,7 +4,7 @@ import './DottedCss.css';
 
 const DottedVerticalLine = () => {
     return (
-        <div className="dotted-vertical-line-bootstrap"></div>
+        <div className="dotted-vertical-line-bootstrap m"></div>
     );
 };
 export default DottedVerticalLine;
