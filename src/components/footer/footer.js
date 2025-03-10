@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <div className="foot">
             <div className="container">
-                <footer className="d-flex flex-wrap justify-content-between align-items-center">
-                    <span className="mb-1 mb-md-0 text-body-secondary">© 2025 Licuk Tbk.</span>
+                <footer className="d-flex flex-wrap justify-content-between align-items-start">
+                    <span className="text-body-secondary">© 2025 Licuk Tbk.</span>
 
                     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li className="ms-3"><a className="text-body-secondary" href="#">

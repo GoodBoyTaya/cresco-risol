@@ -15,8 +15,8 @@ function Home() {
             </div>
             <div className="overlay"></div>
             <div className="row p-5 m-5">
-                <div className="col px-5">
-                    <div className="d-flex justify-content-center   ">
+                <div className="col">
+                    <div className="d-flex justify-content-center">
                         <img src={image} alt="example" className="img" id="img-home-story"/>
                     </div>
                 </div>
@@ -37,10 +37,21 @@ function Home() {
                         Ut massa posuere nibh nunc dis auctor mollis adipiscing lorem.</p>
 
                     <a href="/our-story">
-                        <button type="button" className="btn btn-outline-dark mt-4" id="our-story-button">Our Story</button>
+                        <button type="button" className="btn btn-outline-dark mt-4" id="our-story-button">&nbsp; Our Story &nbsp;</button>
                     </a>
                 </div>
             </div>
+            <div className="row pt-5 mt-5">
+            <div className="col">
+                <div className="container" id="image-left">
+                    </div>
+            </div>
+            <div className="col">
+                <div className="container" id="image-right">
+                    </div>
+            </div>
+            </div>
+            
         </div>
         <Footer/>
     </div>

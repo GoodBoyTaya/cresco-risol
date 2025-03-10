@@ -78,10 +78,27 @@ body{
 
 #our-story-button{
     --bs-btn-border-radius: 30px;
+    --bs-btn-line-height: 40px;
+    --bs-btn-border-width: 2px;
 }
 
 #img-home-story{
     height:540px;
     width:540px;
+}
+
+#image-left{
+    background-image: url('../../photos/home-bg.png');
+    height: 80vh;
+    width: 80vh;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+#image-right{
+    background-image: url('../../photos/our\ story-bg.jpg');
+    height: 80vh;
+    width: 80vh;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
 }
 
