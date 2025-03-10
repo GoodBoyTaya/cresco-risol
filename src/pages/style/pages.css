@@ -1,9 +1,87 @@
+html {
+    overflow:   scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body{
     background-color: #F5F5F5;
     font-family: Inter;
+}
+#home-title{
+    font-family: Cinzel;
+    color: #2C2F24;
+    font-weight: normal;
 }
 
 #title{
     font-weight: bold;
     color: #AD343E;
 }
+#img-ourstory{
+    height: 100%;
+    width: 100%;
+}
+#quote-mark{
+    font-family: "Noto Sans Kharoshthi";
+}
+#img-bg{
+    height: 50%;
+    width: 100%;
+}
+.background-div {
+    background-image: url('../../photos/our story-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    /*height: 1000px; !* Set the height of the div *!*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    position: relative; /* Allow text/content to be placed on top */
+    color: white; /* Text color for contrast */
+
+}
+.background-div-home {
+    background-image: url('../../photos/home-bg.png');
+    background-size: cover;
+    background-position: center;
+    /*height: 1000px; !* Set the height of the div *!*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    position: relative; /* Allow text/content to be placed on top */
+    color: white; /* Text color for contrast */
+
+}
+.content {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 2; /* Content above the overlay */
+    text-align: center;
+    color: white; /* Text color for contrast */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    opacity: 60%;
+    z-index: 1; /* Ensure it's on top of the image */
+}
+
+#our-story-button{
+    --bs-btn-border-radius: 30px;
+}
+
+#img-home-story{
+    height:540px;
+    width:540px;
+}
+

@@ -1,11 +1,10 @@
-// Navbar.js
 import React from 'react';
-import './Navbar.css';
-import {NavLink} from "react-router-dom"; // Import your CSS file
+import './navbar.css';
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="container-fluid">
+        <div className="container">
             <nav className="navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
                 <ul>
                     <li>
